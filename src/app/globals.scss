@@ -1,15 +1,62 @@
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/persian/Vazirmatn-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/persian/Vazirmatn-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Vazirmatn';
+  src: url('/persian/Vazirmatn-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'WinkyRough';
+  src: url('/english/WinkyRough-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'WinkyRough';
+  src: url('/english/WinkyRough-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'WinkyRough';
+  src: url('/english/WinkyRough-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  min-height: 100vh;
+  font-family: 'Vazirmatn', sans-serif;
+  background: #fafbfc;
+  color: #222;
+}
+
+:lang(en), .en, [lang="en"] {
+  font-family: 'WinkyRough', sans-serif !important;
+}
+
 /* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html, body {
-  min-height: 100vh;
-  font-family: var(--font-geist-sans, sans-serif);
-  background: #fafbfc;
-  color: #222;
 }
 
 body {

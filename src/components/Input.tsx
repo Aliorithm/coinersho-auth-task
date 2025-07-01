@@ -22,10 +22,12 @@ const Input: React.FC<InputProps> = ({
   name,
   disabled = false,
 }) => {
+  const inputId = name || Math.random().toString(36).substring(2, 9);
   return (
     <div className={styles.inputWrapper}>
-      {label && <label className={styles.label}>{label}</label>}
+      {label && <label className={styles.label} htmlFor={inputId}>{label}</label>}
       <input
+        id={inputId}
         className={styles.input + (error ? " " + styles.inputError : "")}
         value={value}
         onChange={onChange}

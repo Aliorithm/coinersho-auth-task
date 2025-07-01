@@ -1,4 +1,4 @@
-# Next.js Auth + Dashboard MVP
+# Next.js Auth + Dashboard
 
 این پروژه یک سیستم احراز هویت ساده با Next.js (App Router)، TypeScript و SCSS Module است.
 
