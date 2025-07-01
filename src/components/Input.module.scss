@@ -1,0 +1,48 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+
+  .label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+  }
+
+  .input {
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border 0.2s;
+    outline: none;
+    background: #fff;
+
+    &:focus {
+      border-color: #6366f1;
+    }
+  }
+
+  .inputError {
+    border-color: #ef4444;
+  }
+
+  .error {
+    color: #ef4444;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputWrapper {
+    .input {
+      font-size: 0.95rem;
+      padding: 0.65rem 0.8rem;
+    }
+    .label {
+      font-size: 0.95rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background: #fafbfc;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.link {
+  padding: 1.1rem 2.5rem;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #6366f11a;
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.linkAuth {
+  background: #6366f1;
+  color: #fff;
+}
+
+.linkDashboard {
+  background: #222;
+  color: #fff;
+}
+
+.desc {
+  color: #666;
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .link {
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+  }
+} 

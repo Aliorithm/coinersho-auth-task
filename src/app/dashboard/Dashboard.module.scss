@@ -1,0 +1,25 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafbfc;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  background: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 2px 16px #6366f11a;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.1rem;
+    padding: 1.2rem 0.7rem;
+  }
+}

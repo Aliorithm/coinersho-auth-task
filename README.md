@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Auth + Dashboard MVP
 
-## Getting Started
+این پروژه یک سیستم احراز هویت ساده با Next.js (App Router)، TypeScript و SCSS Module است.
 
-First, run the development server:
+## Features
+- صفحه ورود با اعتبارسنجی شماره موبایل ایرانی
+- دریافت کاربر تصادفی از API و ذخیره در localStorage
+- ریدایرکت به داشبورد پس از ورود موفق
+- صفحه داشبورد محافظت‌شده (redirect در صورت عدم ورود)
+- کامپوننت‌های قابل استفاده مجدد Input و Button
+- استایل‌دهی با SCSS Module و رعایت ریسپانسیو بودن
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Project Structure
+```
+/app
+  /auth
+    page.tsx
+    Auth.module.scss
+  /dashboard
+    page.tsx
+    Dashboard.module.scss
+/components
+  Input.tsx
+  Input.module.scss
+  Button.tsx
+  Button.module.scss
+/utils
+  validatePhone.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development Steps (Checklist)
+- [x] نصب sass و راه‌اندازی SCSS Module
+- [x] ساخت فایل globals.scss و ایمپورت آن در layout
+- [x] ساخت پوشه‌ها و فایل‌های اصلی پروژه طبق ساختار بالا
+- [x] ساخت کامپوننت Input با قابلیت نمایش خطا و استایل ماژولار
+- [x] ساخت کامپوننت Button با حالت loading و disabled و استایل ماژولار
+- [x] ساخت helper اعتبارسنجی شماره موبایل ایرانی (validatePhone)
+- [x] پیاده‌سازی صفحه /auth (فرم، ولیدیشن، ذخیره کاربر، ریدایرکت)
+- [x] پیاده‌سازی صفحه /dashboard (چک کاربر، ریدایرکت، پیام خوش‌آمدگویی)
+- [x] ریسپانسیو و تمیز کردن کد و استایل‌ها
+- [x] تست نهایی و اطمینان از کارکرد صحیح
